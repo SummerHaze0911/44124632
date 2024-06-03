@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-     <head></head>
-     <body>  
-        <h1>This is my second example.</h1>
+<body>
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+
 <script>
-let name = window.prompt("What is your name?", "John Doe");
-name = name ? name : "anonymous";
-let age = prompt("Hello " + name + " how old are you?");
-alert(name + " is " + age + " years old");
-document.write("This is my text"+age)
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(4, 3);
+document.getElementById("demo").innerHTML = result;
 </script>
-    </body>
+
+</body>
 </html>
